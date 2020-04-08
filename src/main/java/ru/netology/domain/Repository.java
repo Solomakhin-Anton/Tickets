@@ -16,8 +16,8 @@ public class Repository {
             new Ticket(6, 3100,"DME", "KZN", 95),
             new Ticket(7, 3100, "DME", "KZN", 95),
             new Ticket(8, 3100, "DME", "KZN", 95),
-            new Ticket(9, 4114, "SVO", "KZN", 95),
-            new Ticket(10, 4114, "SVO", "KZN", 95)};
+            new Ticket(9, 4114, "SVO", "KZN", 100),
+            new Ticket(10, 4114, "SVO", "KZN", 85)};
 
 
 

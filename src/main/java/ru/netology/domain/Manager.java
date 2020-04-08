@@ -11,8 +11,7 @@ import java.util.Arrays;
 @NoArgsConstructor
 public class Manager {
     Repository list;
-
-    public Ticket[] findAll(String from, String to) {
+    public Ticket[] findAll(String from, String to, TicketByPriceAscComparator comparator) {
         Ticket[] newList = new Ticket[0];
         for (Ticket ticket : list.getAll()) {
             if (ticket.arrival.equals(to) && ticket.departure.equals(from)) {
@@ -20,11 +19,14 @@ public class Manager {
                 System.arraycopy(newList, 0, tmp, 0, newList.length);
                 tmp[tmp.length - 1] = ticket;
                 newList = tmp;
-                Arrays.sort(newList);
+                Arrays.sort(newList, comparator);
                 System.out.println(ticket);
             }
+
         }
+
         return newList;
     }
+
 }
 

@@ -12,7 +12,7 @@ public class Ticket implements Comparable<Ticket> {
     int price;
     String arrival;
     String departure;
-    double time;
+    int time;
 
     @Override
     public int compareTo(Ticket o) {
